@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>nz.co.camel.management</groupId>
@@ -14,7 +15,6 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<spring.version>4.1.5.RELEASE</spring.version>
 		<camel.version>2.14.1</camel.version>
-		<guice.version>3.0</guice.version>
 		<guava.version>17.0</guava.version>
 		<servlet.api.version>3.0.1</servlet.api.version>
 		<logback.version>1.1.2</logback.version>
@@ -22,10 +22,17 @@
 		<jolokia.version>1.2.2</jolokia.version>
 		<commons-lang3.version>3.3.2</commons-lang3.version>
 		<activemq.version>5.11.1</activemq.version>
+		<junit.version>4.11</junit.version>
 	</properties>
 
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${junit.version}</version>
+				<scope>test</scope>
+			</dependency>
 			<dependency>
 				<groupId>org.jolokia</groupId>
 				<artifactId>jolokia-jvm</artifactId>
@@ -135,6 +142,8 @@
 	</build>
 	<modules>
 		<module>camel-management-shared</module>
-    <module>camel-management-web</module>
-  </modules>
+		<module>camel-management-web</module>
+		<module>camel-management-route</module>
+
+	</modules>
 </project>
