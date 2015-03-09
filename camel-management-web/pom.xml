@@ -32,10 +32,7 @@
 			<artifactId>javax.servlet-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.apache.camel</groupId>
-			<artifactId>camel-servlet</artifactId>
-		</dependency>
+		
 	</dependencies>
 	<build>
 		<finalName>camel-management-web</finalName>

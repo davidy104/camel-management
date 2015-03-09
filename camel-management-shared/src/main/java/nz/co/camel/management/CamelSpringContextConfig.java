@@ -7,6 +7,7 @@ import javax.annotation.Resource;
 import org.apache.camel.CamelContext;
 import org.apache.camel.ManagementStatisticsLevel;
 import org.apache.camel.ThreadPoolRejectedPolicy;
+import org.apache.camel.component.properties.PropertiesComponent;
 import org.apache.camel.management.DefaultManagementNamingStrategy;
 import org.apache.camel.spi.ThreadPoolProfile;
 import org.apache.camel.spring.CamelBeanPostProcessor;

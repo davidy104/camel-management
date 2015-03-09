@@ -7,6 +7,6 @@ import org.springframework.context.annotation.Import;
 
 @Configuration
 // @ComponentScan(basePackages = "nz.co.camel.management")
-@Import(value = { CamelSpringContextConfig.class, RouteConfig.class })
+@Import(value = { CamelSpringContextConfig.class, CamelActivemqConfig.class,RouteConfig.class })
 public class ApplicationConfiguration {
 }
